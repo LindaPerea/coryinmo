@@ -1,0 +1,703 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+body {
+    height: 100vh;
+
+}
+
+.bgImage {
+    height: 1050px;
+    background-image: url('./images/fondoInmobiliaria.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+    
+    
+}
+nav {
+    
+    display: flex;
+    align-items: center;
+    padding-top: 70px   ;
+    padding-left: 50px;
+
+}
+
+ul {
+    position: relative;
+    transform: skewY(-15deg);
+    transition: 0.5s;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 150px;
+    background: #081F54;
+    padding: 15px;
+    z-index: var(--i);
+    transition: 0.5s;
+}
+
+ul li:hover
+{
+    background: #33a3ee;
+    transform: translateX(50px);
+}
+
+ul li::before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 20px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+ul li:hover::before
+{
+    background: #1f5378; /*color azul*/
+}
+
+ul li::after 
+{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #35383e;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+ul li:hover::after
+{
+    background: #2982b9; /*color medio celestito*/
+}
+
+ul li a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+ul li:hover a {
+    color: #fff;
+}
+
+ul li:last-child::after
+{
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/*arriba fin menu hover */
+
+
+.containerMenuLogo {
+    width: 100% ;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+    width: 25%;
+        
+}
+
+.logo {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.three {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+.heigthMain {
+    width: 30%;
+}
+/*Beneficios contenedor */
+
+.cajaContenedor {
+    width: 100%;
+    height: 50vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorBeneficios {
+    background-color: #111111;
+    
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+
+}
+.beneficio {
+    
+    color: #333333;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    
+
+}
+
+.icons {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+	color: #081F54;
+    justify-content: center;
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 150, 0.8); /* Sombra de texto */
+}
+
+div h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000
+}
+
+/*revisar este que dice FONDO no tengo ninguna clase con ese nombre */
+.fondo {
+    background-color: #1f5378;
+    color: #fefefe;
+    padding: 25px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.search {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search i {
+    font-size: 25px;
+    color: #111111;
+}
+
+.search-txt {
+    display: flex;
+    align-items: center;
+}
+
+.search-txt i {
+    font-size: 40px;
+    color: #F8010A;
+}
+
+.search-txt h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.movies {
+    padding: 0px 0 50px 0;
+}
+
+.u-full-width {
+    height: 30px;
+    font-size: 1rem;
+    
+}
+
+.movies h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #fefefe;
+}
+
+/* SWIPER */
+.swiperContainerBackground {
+    background-color:#1f5378;
+    
+}
+
+.swiper {
+    width: 100%;   
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+
+    height: 100%;
+    
+    object-fit: cover;
+
+}
+
+.swiper-slide .description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.icons {
+    padding: 0 350px 50px 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i {
+    font-size: 25px;
+    color: #111111;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i:hover {
+    color: #f8010A;
+    background-color: #fefefe;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+@media(max-width: 991px) {
+    body {
+        min-height: 0vh;
+    }
+
+    .search {
+        padding: 30px 30px 0 30px;
+    }
+
+    .movies {
+        padding: 30px;
+    }
+
+    .icons {
+        padding: 30px;
+    }
+}
+
+
+.contenedor {
+
+    color: #ffffff;
+    background-color: #081F54;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    height: 150px;
+
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.textContainer {
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 20px;
+    margin: 0;
+
+}
+
+
+.search-button {
+	margin-left: 10px;
+}
+
+
+/* estilos para mi contenido generado dinamicamente */
+
+
+
+
+
+
+#resultado {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en filas adicionales */
+    gap: 20px; /* Espacio entre las propiedades */
+
+
+
+}
+
+.property {
+
+    position: relative;
+
+    width: 300px;
+    height: 500px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: trasnsform 0.5s ease;
+
+    /*overflow: hidden; poner despues*/
+
+
+    margin-top: 16px;
+    border-radius: 8px;
+
+    padding: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos horizontalmente */
+
+}
+
+
+.property-inner {
+
+    width: 100%;    
+    height: auto;
+    position: relative;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+
+    
+
+
+
+}
+
+.property-front {
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+
+    box-sizing: border-box;
+
+    text-align: center;
+    
+
+
+}
+
+
+.property-back {
+    width: 100%;
+
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+    color: #081F54;
+    font-size: 1.5rem;
+
+}
+
+.property-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #081F54;
+
+}
+
+.property-city,
+.property-operation {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #081F54;
+}
+
+.property-image {
+    width: 100%;
+    height: 40vh;
+    border-radius: 8px;
+    margin-top: 10px; /* Espacio entre texto e imagen */
+}
+
+.property-details-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 10px; /* Espacio entre la imagen y el texto, ajustable según necesidad */
+}
+
+.property-image-area {
+    width: 10%;;
+}
+
+.property-area-element {
+    font-size: 1rem;
+    text-align: left;
+}
+.property-imageBedroom {
+    width: 10%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px; /* Espacio entre texto e imagen */
+}
+
+.property-bedroom {
+    font-size: 1rem;
+}
+
+.property-imageBathroom {
+    width: 10%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px; /* Espacio entre texto e imagen */
+}
+
+.property-bathroom {
+    font-size: 1rem;
+}
+
+
+.property-price-container {  
+    display: grid;
+    justify-content: center;   
+    margin-top: 20px;
+    border-top: #081F54 solid 2px;
+    border-bottom: #081F54 solid 2px;
+}
+
+.property-price {
+    font-size: 1rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    color: #081F54;
+}
+
+.property-detalles {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;    
+}
+
+.property-detalles-back {
+    width: 100%;
+    height: auto;    
+}
+
+
+@media (max-width: 768px) {
+    .beneficio {
+        width: 90%;
+    }
+    
+}
+
+
+/* Media Queries para el nav y el logo de la parte arriba luego acomodar*/
+
+
+
+@media (max-width: 768px) {
+
+    .containerMenuLogo {
+        width: 100% ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+}
+
+/*Slider Beneficios */
+.containerFullSliderBeneficios{
+    background-color: #081F54;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: auto;
+}
+.sliderB {
+    width: 85vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background-color: #fefefe;
+    border-radius: 8px;
+}
+
+.sliderB .slide-trackB {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 10);
+    gap: 30px;
+}
+
+.sliderB .slideB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.slideB .beneficiosTamano {
+    width: 80px;   
+    margin-top: 30px;   
+}
+
+
+
+
+.sliderB img {
+    width: 100%;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-100px * 5));
+        transform: translateX(calc(-100px 5));
+    }
+}
+
+
+
+
+
+
+
+
+/*Slider Aliados*/
+.containerFullSlider{
+    background-color: #081F54;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: auto;
+}
+.slider {
+    width: 85vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background-color: #fefefe;
+    border-radius: 8px;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+    gap: 30px;
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slider img {
+    width: 100%;
+}
+
+.slide img {
+    width: 200px;
+}
+
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-100px * 7));
+        transform: translateX(calc(-100px *7));
+    }
+}

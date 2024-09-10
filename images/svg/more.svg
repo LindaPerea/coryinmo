@@ -1,0 +1,7 @@
+<svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Línea horizontal más corta y más fina -->
+  <line x1="40" y1="50" x2="60" y2="50" stroke="#1F5378" stroke-width="4"/>
+
+  <!-- Línea vertical más corta y más fina -->
+  <line x1="50" y1="40" x2="50" y2="60" stroke="#1F5378" stroke-width="4"/>
+</svg>
